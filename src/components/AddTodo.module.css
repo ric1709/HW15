@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+.title {
+	background-color: purple;
+	width: 240px;
+	height: 57px;
+    padding: 10px;
+	text-align: center;
+	margin: 25px auto;
+	color: white;
+	border-radius: 10px;
+	font-size: 42px;
+	font-family: 'Work Sans', sans-serif;
+}
+.form {
+	width: 700px;
+	margin: 25px auto;
+	background-color: purple;
+	height: 150px;
+	border-radius: 50px;
+	box-shadow: 5px 10px 15px black;
+	border: 5px solid slateblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Work Sans', sans-serif;
+}
+.input {
+	width: 260px;
+	height: 40px;
+	padding: 5px;
+	margin: 0 5px 0 5px;
+	outline: none;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.button {
+	padding: 10px 20px;
+	border: unset;
+	border-radius: 15px;
+	color: #212121;
+	z-index: 1;
+	background: #e8e8e8;
+	position: relative;
+	font-weight: 1000;
+	font-size: 17px;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	transition: all 250ms;
+	overflow: hidden;
+	margin: 0 5px 0 5px;
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	border-radius: 15px;
+	background-color: red;
+	z-index: -1;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	transition: all 250ms;
+}
+
+.button:hover {
+	color: #e8e8e8;
+}
+
+.button:hover::before {
+	width: 100%;
+}
